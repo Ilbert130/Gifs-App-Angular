@@ -1,2 +1,8 @@
-<h5>Buscar:</h5>
-<input type="text" class="form-control" placeholder="buscar gifs...">
+<div class="row mb-2">
+  <h5>Buscar:</h5>
+  <!-- Esta es otra manera de obtener el valor de un input, y esta es usando una referencia local -->
+  <!-- La referencia local es '#txtTagInput' y atrves de esta accedemos a los valores que entran en el input -->
+  <!-- Si indicamos keyup.enter el evento se ejecutara con la tecla enter -->
+  <!-- <input type="text" class="form-control" placeholder="Buscar gifs..." (keyup.enter)="searchTag(txtTagInput.value)" #txtTagInput> -->
+  <input type="text" class="form-control" placeholder="Buscar gifs..." (keyup.enter)="searchTag()" #txtTagInput>
+</div>
