@@ -4,7 +4,8 @@
 
  <div class="list-group list-reset">
   <button class="list-group-item list-group-item-action mb-1" *ngFor="let item of tagsHistory">
-    {{item}}
+    <!-- Usuando el pipe uppercase -->
+    {{item | titlecase}}
   </button>
 
  </div>
