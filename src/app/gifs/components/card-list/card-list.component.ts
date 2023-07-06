@@ -6,7 +6,7 @@ import { Gif } from '../../interfaces/gisf.interfaces';
   templateUrl: './card-list.component.html'
 })
 export class CardListComponent {
-
+  
   @Input()
   public gifs:Gif[] = [];
 }

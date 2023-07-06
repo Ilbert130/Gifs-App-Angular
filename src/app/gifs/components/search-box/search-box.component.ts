@@ -17,6 +17,7 @@ export class SearchBoxComponent {
   // directamente al input
   // searchTag(newTag:string){
   searchTag(){
+    // De esta manera accedemos al valor de un elemento de HTML
     const newTag = this.tagInput.nativeElement.value;
     this.gifsService.searchTag(newTag);
     this.tagInput.nativeElement.value = '';

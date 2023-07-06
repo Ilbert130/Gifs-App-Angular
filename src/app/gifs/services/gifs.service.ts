@@ -54,8 +54,10 @@ export class GifsService {
     if(!localStorage.getItem('history')) return;
     // key
     this._tagsHistory = JSON.parse(localStorage.getItem('history')!);
+    this.searchTag(this._tagsHistory[0]);
   }
 
+  //Para organizar el historial de busqueda
   private organizeHistory(tag:string){
     tag = tag.toLocaleLowerCase();
 
